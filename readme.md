@@ -7,6 +7,8 @@ Descrição concisa do projeto, sua finalidade e funcionalidades.
 
 - [Como Usar](#como-usar)
 - [Autenticar](#autenticar)
+- [Contas Bancárias](#contas-bancárias)
+- [Gerando cobrabança](#gerando-cobrança)
 
 
 ## Como Usar
@@ -89,3 +91,5 @@ Deve ser informado o token da autenticação com o seguinte corpo:
   "chavepix": "28779295827"
 }
 ```
+
+#### Gerando Cobranças
