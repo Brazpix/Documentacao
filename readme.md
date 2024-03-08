@@ -9,6 +9,7 @@ Descrição concisa do projeto, sua finalidade e funcionalidades.
 - [Autenticar](#autenticar)
 - [Contas Bancárias](#contas-bancárias)
 - [Gerando cobrabança](#gerando-cobrança)
+- [Obtendo estado cobrança](#obtendo-estado-cobrança)
 
 
 ## Como Usar
@@ -56,7 +57,7 @@ A partir desse ponto todas as consultas devem ser feitas utilizando o token como
 
 #### Contas Bancárias
 
-Caso o cliente possua uma conta cadastrada para gerar pix o sistema irá retornar o bloco 
+Caso o cliente possua uma conta cadastrada para gerar pix o sistema irá retornar o bloco  na autenticação.
 
 ```
 "contas": [
@@ -92,4 +93,28 @@ Deve ser informado o token da autenticação com o seguinte corpo:
 }
 ```
 
+![Cadastro de conta bancária](https://github.com/Brazpix/Documentacao/assets/7662248/f93b4b1d-c9f1-43e4-a9d6-16973eb59de6)
+
+
 #### Gerando Cobranças
+
+Para gerar deve ser por meio da rotina gerarcobranca
+
+_obs: o campo ContaId é referente ao id da conta informado quando se obtem o usuário_
+
+
+```
+{
+    "ContaId": "918c7d15-37da-4487-bd91-9f23212cea3a",
+    "Valor": 2.22,
+    "Descricao": "testando novo retorno"
+}
+```
+![Gerando cobrança](https://github.com/Brazpix/Documentacao/assets/7662248/dd3d039e-5262-4711-badf-712c47f63723)
+
+
+#### Obtendo estado cobrança
+
+A consulta de cobranças deve ser por meio do metodo consultarcobranca informando o token que foi gerado no momento da transação.
+
+![Obter estado da cobrança](https://github.com/Brazpix/Documentacao/assets/7662248/40f782bf-9d1c-48cd-8be0-a750425821c4)
