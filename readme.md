@@ -12,7 +12,11 @@ Descrição concisa do projeto, sua finalidade e funcionalidades.
 - [Obtendo estado cobrança](#obtendo-estado-cobrança)
 
 
-## Como Usar
+### URL API
+
+[hom-brazpix](https://hom-brazpix.azurewebsites.net/swagger/index.html)
+
+### Como Usar
 
 O primeiro passo para o consumo da API é a por meio do endpoint autenticar
 
