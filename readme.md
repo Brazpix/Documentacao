@@ -1,4 +1,4 @@
-# Nome do Projeto
+# BRAZPIX DOC
 
 Descrição concisa do projeto, sua finalidade e funcionalidades.
 
